@@ -1,4 +1,5 @@
 <?php
+if(session_status() != PHP_SESSION_ACTIVE)
 session_start() ;
 // Якщо на сайт тільки зайшли, обнулюємо лічильник.
 if (!isset($_SESSION['count']))
